@@ -1,0 +1,6 @@
+{
+  "lagHaciaArriba":0.5,
+  "lagHaciaAbajo":-0.5,
+  "lagHaciaDerecha":0.5,
+  "lagHaciaIzquerda":-0.5
+}

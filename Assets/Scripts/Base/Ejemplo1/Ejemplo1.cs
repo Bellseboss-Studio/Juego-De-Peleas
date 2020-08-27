@@ -1,8 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-using UnityEditorInternal.VersionControl;
-
-public class Ejemplo1 : EstadisticasBase
+﻿public class Ejemplo1 : EstadisticasBase
 {
     public override void Awake()
     {

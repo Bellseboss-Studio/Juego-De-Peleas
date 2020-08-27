@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EstadisticasBase : MonoBehaviour, InterfazDeMetodosGenericosParaAcciones
@@ -101,12 +102,27 @@ public class EstadisticasBase : MonoBehaviour, InterfazDeMetodosGenericosParaAcc
 
     public virtual void Awake()
     {
-        vida = 100;
-        fuerza = 10;
-        fuerzaGolpeDebil = 800;
-        fuerzaGolpeFuerte = 1000;
-        fuerzaEmpujeDragonPunch = 4000;
-        fuerzaDragonPunch = fuerza * 0.5f;
+        //delegamos la lectura del archivo a otro coso
+        string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticasGenerales.txt");
+        GameObject.Find("TextoDebug").GetComponent<TextMeshProUGUI>().text += stringDeEstadisticasGenrales;
+
+        EstadisticasBasePersonajeDebug estadisticasBase = JsonUtility.FromJson<EstadisticasBasePersonajeDebug>(stringDeEstadisticasGenrales);
+
+        vida = estadisticasBase.vida;
+        fuerza = estadisticasBase.fuerza;
+        fuerzaGolpeDebil = estadisticasBase.fuerzaGolpeDebil;
+        fuerzaGolpeFuerte = estadisticasBase.fuerzaGolpeFuerte;
+        fuerzaEmpujeDragonPunch = estadisticasBase.fuerzaEmpujeDragonPunch;
+        fuerzaDragonPunch = estadisticasBase.fuerzaDragonPunch;
+        patada = estadisticasBase.patada;
+        punio = estadisticasBase.patada;
+        speedJump = estadisticasBase.speedJump;
+        speed = estadisticasBase.speed;
+        tiempoRecuperacion = estadisticasBase.tiempoRecuperacion;
+        tiempoGolpeado = estadisticasBase.tiempoGolpeado;
+        speedFireBal = estadisticasBase.speedFireBal;
+        fuerzaDeSaltoHaciaAtras = estadisticasBase.fuerzaDeSaltoHaciaAtras;
+        fuerzaHaciaArriba = estadisticasBase.fuerzaHaciaArriba;
 
 
         //agregamos la secuencia de fireball

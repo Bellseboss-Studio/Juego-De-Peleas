@@ -7,11 +7,27 @@ public class Cyborg : EstadisticasBase
     public override void Awake()
     {
         base.Awake();
-        Vida += 100;
-        Fuerza = 10;
-        Speed = 1;
-        SpeedJump = 1;
-        SaltaAlDragonPunch = false;
+        //
+        //delegamos la lectura del archivo a otro coso
+        string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticasPJ_" + typeof(Cyborg).Name+".txt");
+        GameObject.Find("TextoDebug").GetComponent<TMPro.TextMeshProUGUI>().text += stringDeEstadisticasGenrales;
+
+        EstadisticasBasePersonajeDebug estadisticasBase = JsonUtility.FromJson<EstadisticasBasePersonajeDebug>(stringDeEstadisticasGenrales);
+        Vida += estadisticasBase.vida;
+        Fuerza += estadisticasBase.fuerza;
+        FuerzaGolpeDebil += estadisticasBase.fuerzaGolpeDebil;
+        FuerzaGolpeFuerte += estadisticasBase.fuerzaGolpeFuerte;
+        FuerzaEmpujeDragonPunch += estadisticasBase.fuerzaEmpujeDragonPunch;
+        FuerzaDragonPunch += estadisticasBase.fuerzaDragonPunch;
+        Patada += estadisticasBase.patada;
+        Punio += estadisticasBase.patada;
+        SpeedJump += estadisticasBase.speedJump;
+        Speed += estadisticasBase.speed;
+        TiempoRecuperacion += estadisticasBase.tiempoRecuperacion;
+        TiempoGolpeado += estadisticasBase.tiempoGolpeado;
+        SpeedFireBall += estadisticasBase.speedFireBal;
+        FuerzaDeSaltoHaciaAtras += estadisticasBase.fuerzaDeSaltoHaciaAtras;
+        FuerzaHaciaArriba += estadisticasBase.fuerzaHaciaArriba;
     }
 
 }

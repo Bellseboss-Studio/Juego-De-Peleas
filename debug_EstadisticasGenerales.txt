@@ -1,0 +1,20 @@
+{
+  "vida":100,
+  "velocidad":1.2,
+  "fuerza":10,
+  "fuerzaGolpeDebil":1,
+  "fuerzaGolpeFuerte":2,
+  "fuerzaEmpujeDragonPunch":1,
+  "fuerzaDragonPunch":30,
+  "patada":5,
+  "punio":4,
+  "speedJump":10,
+  "speed":3,
+  "tiempoRecuperacion":0.5,
+  "tiempoGolpeado":0.5,
+  "speedFireBal":20,
+  "fuerzaDeSaltoHaciaAtras":3,
+  "fuerzaHaciaArriba":2,
+  "tiempoDeDashHaciaAtras":2,
+  "saltaAlDragonPunch":false
+}

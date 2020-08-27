@@ -19,6 +19,7 @@ public class MovimientoGenerico : MonoBehaviour
     private int stackMaximo;
     [SerializeField]
     private KeyCode botonPrecionado;
+    EstadisticaMovimiento estadisticasMovimiento;
 
     private void Start()
     {
@@ -30,6 +31,10 @@ public class MovimientoGenerico : MonoBehaviour
         maquina = GetComponent<BaseMaquinaEstadosFinita>();
         palancas = new Queue<string>();
         velocidadDash = 1;
+        //Vamos a buscar configuracion del delay
+        string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticaMovimiento.txt");
+        GameObject.Find("TextoDebug").GetComponent<TMPro.TextMeshProUGUI>().text += stringDeEstadisticasGenrales;
+        estadisticasMovimiento = JsonUtility.FromJson<EstadisticaMovimiento>(stringDeEstadisticasGenrales);
     }
     private void Update()
     {
@@ -48,12 +53,12 @@ public class MovimientoGenerico : MonoBehaviour
         {
             if (!comenzarContar)
             {
-                if (GetMovimientoDelObjeto() > 0)
+                if (GetMovimientoDelObjeto() > estadisticasMovimiento.lagHaciaDerecha)
                 {
                     x = 1;
                     LogearComandosIngresados();
                 }
-                if (GetMovimientoDelObjeto() < 0)
+                if (GetMovimientoDelObjeto() < estadisticasMovimiento.lagHaciaIzquerda)
                 {
                     x = -1;
                     LogearComandosIngresados();
@@ -65,7 +70,7 @@ public class MovimientoGenerico : MonoBehaviour
                     GetComponent<BaseMaquinaEstadosFinita>().ComponenteAnimacion.SetBool("correr", false);
                     LogearComandosIngresados();
                 }
-                if (Input.GetAxis(maquina.Vertical) > 0)
+                if (Input.GetAxis(maquina.Vertical) > estadisticasMovimiento.lagHaciaArriba)
                 {
                     maquina.ComponenteAnimacion.SetTrigger("saltar");
                     maquina.ComponenteAnimacion.SetBool("tocarPiso", false);
@@ -73,7 +78,7 @@ public class MovimientoGenerico : MonoBehaviour
                     comenzarContar = true;
                     LogearComandosIngresados();
                 }
-                else if (Input.GetAxis(maquina.Vertical) < 0)
+                else if (Input.GetAxis(maquina.Vertical) < estadisticasMovimiento.lagHaciaAbajo)
                 {
                     LogearComandosIngresados();
                 }
@@ -91,7 +96,6 @@ public class MovimientoGenerico : MonoBehaviour
                 {
                     y = 0;
                 }
-
 
                 //Como por ejemplo
                 //2x^(3)+2
@@ -122,7 +126,7 @@ public class MovimientoGenerico : MonoBehaviour
     public string CardinalidadEscritaHorizontal()
     {
         string resultadoDelMovimiento;
-        if (GetMovimientoDelObjeto() > 0)
+        if (GetMovimientoDelObjeto() > estadisticasMovimiento.lagHaciaDerecha)
         {
             if (GetComponent<BaseMaquinaEstadosFinita>().CardinalidadDeHaciaAtras() > 0)
             {
@@ -132,7 +136,7 @@ public class MovimientoGenerico : MonoBehaviour
             {
                 resultadoDelMovimiento = SecuenciasPermitidas.DELANTE;
             }
-        }else if (GetMovimientoDelObjeto() < 0)
+        }else if (GetMovimientoDelObjeto() < estadisticasMovimiento.lagHaciaIzquerda)
         {
             if (GetComponent<BaseMaquinaEstadosFinita>().CardinalidadDeHaciaAtras() < 0)
             {
@@ -140,24 +144,22 @@ public class MovimientoGenerico : MonoBehaviour
             }
             else
             {
-                resultadoDelMovimiento = SecuenciasPermitidas.DELANTE;
-                
+                resultadoDelMovimiento = SecuenciasPermitidas.DELANTE;   
             }
         }else
         {
             resultadoDelMovimiento = SecuenciasPermitidas.VACIO;
         }
-
         return resultadoDelMovimiento;
     }
 
     public string CardinalidadEscritaVertical()
     {
-        if (Input.GetAxis(maquina.Vertical) > 0)
+        if (Input.GetAxis(maquina.Vertical) > estadisticasMovimiento.lagHaciaArriba)
         {
             return SecuenciasPermitidas.ARRIBA;
         }
-        else if (Input.GetAxis(maquina.Vertical) < 0)
+        else if (Input.GetAxis(maquina.Vertical) < estadisticasMovimiento.lagHaciaAbajo)
         {
             return SecuenciasPermitidas.ABAJO;
         }
