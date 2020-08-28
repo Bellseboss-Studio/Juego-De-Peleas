@@ -2,6 +2,7 @@
 using System.Collections;
 using TMPro;
 using System;
+using UnityEngine.SceneManagement;
 
 public class DatosPersistentesDelPlayer : MonoBehaviour
 {
@@ -33,5 +34,19 @@ public class DatosPersistentesDelPlayer : MonoBehaviour
     {
         letrero.gameObject.SetActive(false);
     }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Joystick1Button7))
+        {
+            SceneManager.LoadScene("Peleas");
+        }
+    }
+
+    private void OnMouseDown()
+    {
+        
+    }
+
 
 }

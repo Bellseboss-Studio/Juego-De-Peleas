@@ -10,7 +10,7 @@ public class Cyborg : EstadisticasBase
         //
         //delegamos la lectura del archivo a otro coso
         string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticasPJ_" + typeof(Cyborg).Name+".txt");
-        GameObject.Find("TextoDebug").GetComponent<TMPro.TextMeshProUGUI>().text += stringDeEstadisticasGenrales;
+        Debug.Log(stringDeEstadisticasGenrales);
 
         EstadisticasBasePersonajeDebug estadisticasBase = JsonUtility.FromJson<EstadisticasBasePersonajeDebug>(stringDeEstadisticasGenrales);
         Vida += estadisticasBase.vida;
@@ -28,6 +28,7 @@ public class Cyborg : EstadisticasBase
         SpeedFireBall += estadisticasBase.speedFireBal;
         FuerzaDeSaltoHaciaAtras += estadisticasBase.fuerzaDeSaltoHaciaAtras;
         FuerzaHaciaArriba += estadisticasBase.fuerzaHaciaArriba;
+        SaltaAlDragonPunch = estadisticasBase.saltaAlDragonPunch;
     }
 
 }

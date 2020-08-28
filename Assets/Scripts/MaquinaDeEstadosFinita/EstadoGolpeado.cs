@@ -19,8 +19,6 @@ public class EstadoGolpeado : BaseMaquinaEstadosFinita
     }
     public override void Salir()
     {
-        //aSidoGolpeado = false;
-        componenteDeAnimacion.SetBool("golpeado", false);
         IsGolpeado = false;
     }
 

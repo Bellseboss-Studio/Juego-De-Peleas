@@ -33,7 +33,7 @@ public class MovimientoGenerico : MonoBehaviour
         velocidadDash = 1;
         //Vamos a buscar configuracion del delay
         string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticaMovimiento.txt");
-        GameObject.Find("TextoDebug").GetComponent<TMPro.TextMeshProUGUI>().text += stringDeEstadisticasGenrales;
+        Debug.Log(stringDeEstadisticasGenrales);
         estadisticasMovimiento = JsonUtility.FromJson<EstadisticaMovimiento>(stringDeEstadisticasGenrales);
     }
     private void Update()

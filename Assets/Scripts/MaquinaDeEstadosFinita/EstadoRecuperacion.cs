@@ -12,7 +12,8 @@ public class EstadoRecuperacion : BaseMaquinaEstadosFinita
     }
     public override void Salir()
     {
-        
+        //aSidoGolpeado = false;
+        componenteDeAnimacion.SetBool("golpeado", false);
     }
 
     public override void Update()

@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ControladorDeEscenario : MonoBehaviour
 {
@@ -49,5 +50,10 @@ public class ControladorDeEscenario : MonoBehaviour
             }
         }
         throw new Exception("No encontramos al player " + numberPlayer);
+    }
+
+    public void ResetGame()
+    {
+        SceneManager.LoadScene("Peleas");
     }
 }

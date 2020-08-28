@@ -104,7 +104,7 @@ public class EstadisticasBase : MonoBehaviour, InterfazDeMetodosGenericosParaAcc
     {
         //delegamos la lectura del archivo a otro coso
         string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticasGenerales.txt");
-        GameObject.Find("TextoDebug").GetComponent<TextMeshProUGUI>().text += stringDeEstadisticasGenrales;
+        Debug.Log(stringDeEstadisticasGenrales);
 
         EstadisticasBasePersonajeDebug estadisticasBase = JsonUtility.FromJson<EstadisticasBasePersonajeDebug>(stringDeEstadisticasGenrales);
 
@@ -123,6 +123,7 @@ public class EstadisticasBase : MonoBehaviour, InterfazDeMetodosGenericosParaAcc
         speedFireBal = estadisticasBase.speedFireBal;
         fuerzaDeSaltoHaciaAtras = estadisticasBase.fuerzaDeSaltoHaciaAtras;
         fuerzaHaciaArriba = estadisticasBase.fuerzaHaciaArriba;
+        saltaAlDragonPunch = estadisticasBase.saltaAlDragonPunch;
 
 
         //agregamos la secuencia de fireball
