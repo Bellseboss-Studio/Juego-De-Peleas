@@ -14,9 +14,10 @@ public class EstadoEstar : BaseMaquinaEstadosFinita
         try
         {
             //consulto un componente de tipo atacar y le coloco la variable de lo que se precion para entrar al estado sea el caso de que ataque
-            if (Input.GetKeyDown(DeterminacionDeQueBotonSePreciono()))
+            KeyCode botonPrecionado = DeterminacionDeQueBotonSePreciono();
+            if (botonPrecionado != KeyCode.None)
             {
-                GetComponent<EstadoAtacar>().botonPrecionado = DeterminacionDeQueBotonSePreciono();
+                GetComponent<EstadoAtacar>().botonPrecionado = botonPrecionado;
             }
         }
         catch(BotonesException e)
@@ -38,9 +39,10 @@ public class EstadoEstar : BaseMaquinaEstadosFinita
 
     public override Type VerficarTransiciones()
     {
-        if (Input.GetKeyDown(patadaDebil) || Input.GetKeyDown(patadaFuerte) || Input.GetKeyDown(punioDebil) || Input.GetKeyDown(punioFuerte))
+        if (inputManager.SeprecionoElBoton(patadaDebil) || inputManager.SeprecionoElBoton(patadaFuerte) 
+            || inputManager.SeprecionoElBoton(punioDebil) || inputManager.SeprecionoElBoton(punioFuerte))
         {
-            MandarleAlLogLoQueSePreciono();
+            MandarleAlLogLoQueSePreciono(DeterminacionDeQueBotonSePreciono());
             return typeof(EstadoAtacar);
         }
         if(ElOponenteEstaAtacando() && EstaEchandoParaAtras())
@@ -54,51 +56,35 @@ public class EstadoEstar : BaseMaquinaEstadosFinita
         return GetType();
     }
 
-    private void MandarleAlLogLoQueSePreciono()
+    private void MandarleAlLogLoQueSePreciono(KeyCode k)
     {
-        KeyCode LoQueSePreciono = KeyCode.None;
-        if (Input.GetKeyDown(PatadaDebil))
-        {
-            LoQueSePreciono = PatadaDebil;
-        }
-        else if (Input.GetKeyDown(PatadaFuerte))
-        {
-            LoQueSePreciono = PatadaFuerte;
-        }
-        else if (Input.GetKeyDown(PunioDebil))
-        {
-            LoQueSePreciono = PunioDebil;
-        }
-        else if (Input.GetKeyDown(PunioFuerte))
-        {
-            LoQueSePreciono = PunioFuerte;
-        }
-
-        movimientoDelObjeto.LogearComandosIngresados(LoQueSePreciono);
+        movimientoDelObjeto.LogearComandosIngresados(k);
     }
 
     private KeyCode DeterminacionDeQueBotonSePreciono()
     {
-        if (Input.GetKeyDown(patadaDebil))
+        KeyCode LoQueSePreciono;
+        if (inputManager.SeprecionoElBoton(PatadaDebil))
         {
-            return patadaDebil;
+            LoQueSePreciono = inputManager.BotonPrecionado(PatadaDebil);
         }
-        else if (Input.GetKeyDown(patadaFuerte))
+        else if (inputManager.SeprecionoElBoton(PatadaFuerte))
         {
-            return patadaFuerte;
+            LoQueSePreciono = inputManager.BotonPrecionado(PatadaFuerte);
         }
-        else if (Input.GetKeyDown(punioDebil))
+        else if (inputManager.SeprecionoElBoton(PunioDebil))
         {
-            return punioDebil;
+            LoQueSePreciono = inputManager.BotonPrecionado(PunioDebil);
         }
-        else if (Input.GetKeyDown(punioFuerte))
+        else if (inputManager.SeprecionoElBoton(PunioFuerte))
         {
-            return punioFuerte;
+            LoQueSePreciono = inputManager.BotonPrecionado(PunioFuerte);
         }
         else
         {
             throw new BotonesException("No se preciono ningun boton");
         }
+        return LoQueSePreciono;
     }
 
 }

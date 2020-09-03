@@ -11,15 +11,18 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
     protected GameObject oponente;
     protected int playerNumber;
     protected DatosPersistentesDelPlayer player;
-    protected KeyCode patadaDebil, patadaFuerte, punioDebil, punioFuerte;
+    protected InputDefinidosParaElJuego patadaDebil, patadaFuerte, punioDebil, punioFuerte;
     protected float movimientoInyectado = 0;
     protected string baseNombreHorizontal = "Horizontal_Player";
     protected string baseNombreVertical = "Vertical_Player";
     protected MovimientoGenerico movimientoDelObjeto;
+
+    protected InputManager inputManager;
     protected bool terminoLaAnimacion = false;
     public abstract void Salir();
     public virtual void Start()
     {
+        inputManager = GameObject.Find("ControladorDeEscenario").GetComponent<InputManager>();
         componenteDeAnimacion = GetComponent<Animator>();
         accionesDelPersonaje = GetComponent<InterfazDeMetodosGenericosParaAcciones>();
         player = GetComponent<DatosPersistentesDelPlayer>();
@@ -30,17 +33,17 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
         movimientoDelObjeto = GetComponent<MovimientoGenerico>();
         if (playerNumber == 2)
         {
-            punioDebil = KeyCode.Joystick2Button0;
-            punioFuerte = KeyCode.Joystick2Button1;
-            patadaDebil = KeyCode.Joystick2Button2;
-            patadaFuerte = KeyCode.Joystick2Button3;
+            punioDebil = InputDefinidosParaElJuego.PunioDebil_p2;
+            punioFuerte = InputDefinidosParaElJuego.PunioFuerte_p2;
+            patadaDebil = InputDefinidosParaElJuego.PatadaDebil_p2;
+            patadaFuerte = InputDefinidosParaElJuego.PatadaFuerte_p2;
         }
         else if (playerNumber == 1)
         {
-            punioDebil = KeyCode.Joystick1Button0;
-            punioFuerte = KeyCode.Joystick1Button1;
-            patadaDebil = KeyCode.Joystick1Button2;
-            patadaFuerte = KeyCode.Joystick1Button3;
+            punioDebil = InputDefinidosParaElJuego.PunioDebil;
+            punioFuerte = InputDefinidosParaElJuego.PunioFuerte;
+            patadaDebil = InputDefinidosParaElJuego.PatadaDebil;
+            patadaFuerte = InputDefinidosParaElJuego.PatadaFuerte;
         }
     }
 
@@ -100,7 +103,7 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
     {
         //tenemos que ubicar al opoenente y con relacion a el ver si la palanca esta echando hacia atras o adelante de el.
         Vector2 diff = (gameObject.transform.position - oponente.transform.position);
-        if ((diff.x < 0 && GetMovimientoDelObjeto() < 0) || (diff.x > 0 && GetMovimientoDelObjeto() > 0))
+        if ((diff.x < 0 && inputManager.SeMovioHorizontalmente(playerNumber) < 0) || (diff.x > 0 && inputManager.SeMovioHorizontalmente(playerNumber) > 0))
         {
             return true;
         }
@@ -117,18 +120,6 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
         else
         {
             return 1;
-        }
-    }
-
-    protected float GetMovimientoDelObjeto()
-    {
-        if (movimientoInyectado != 0)
-        {
-            return movimientoInyectado;
-        }
-        else
-        {
-            return Input.GetAxis(baseNombreHorizontal);
         }
     }
 
@@ -168,10 +159,10 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
         get { return player; }
     }
 
-    public KeyCode PatadaDebil { get => patadaDebil; }
-    public KeyCode PatadaFuerte { get => patadaFuerte; }
-    public KeyCode PunioDebil { get => punioDebil; }
-    public KeyCode PunioFuerte { get => punioFuerte; }
+    public InputDefinidosParaElJuego PatadaDebil { get => patadaDebil; }
+    public InputDefinidosParaElJuego PatadaFuerte { get => patadaFuerte; }
+    public InputDefinidosParaElJuego PunioDebil { get => punioDebil; }
+    public InputDefinidosParaElJuego PunioFuerte { get => punioFuerte; }
     public int PlayerNumber { get => playerNumber; }
 
     public virtual void FinalDePatada()

@@ -20,9 +20,11 @@ public class MovimientoGenerico : MonoBehaviour
     [SerializeField]
     private KeyCode botonPrecionado;
     EstadisticaMovimiento estadisticasMovimiento;
+    InputManager im;
 
     private void Start()
     {
+        im = GameObject.Find("ControladorDeEscenario").GetComponent<InputManager>();
         //Todo el codigo aqui
         min = -1f;
         max = 1f;
@@ -70,7 +72,7 @@ public class MovimientoGenerico : MonoBehaviour
                     GetComponent<BaseMaquinaEstadosFinita>().ComponenteAnimacion.SetBool("correr", false);
                     LogearComandosIngresados();
                 }
-                if (Input.GetAxis(maquina.Vertical) > estadisticasMovimiento.lagHaciaArriba)
+                if (im.SeMovioVerticalmente(maquina.PlayerNumber) > estadisticasMovimiento.lagHaciaArriba)
                 {
                     maquina.ComponenteAnimacion.SetTrigger("saltar");
                     maquina.ComponenteAnimacion.SetBool("tocarPiso", false);
@@ -78,7 +80,7 @@ public class MovimientoGenerico : MonoBehaviour
                     comenzarContar = true;
                     LogearComandosIngresados();
                 }
-                else if (Input.GetAxis(maquina.Vertical) < estadisticasMovimiento.lagHaciaAbajo)
+                else if (im.SeMovioVerticalmente(maquina.PlayerNumber) < estadisticasMovimiento.lagHaciaAbajo)
                 {
                     LogearComandosIngresados();
                 }
@@ -155,11 +157,11 @@ public class MovimientoGenerico : MonoBehaviour
 
     public string CardinalidadEscritaVertical()
     {
-        if (Input.GetAxis(maquina.Vertical) > estadisticasMovimiento.lagHaciaArriba)
+        if (im.SeMovioVerticalmente(maquina.PlayerNumber) > estadisticasMovimiento.lagHaciaArriba)
         {
             return SecuenciasPermitidas.ARRIBA;
         }
-        else if (Input.GetAxis(maquina.Vertical) < estadisticasMovimiento.lagHaciaAbajo)
+        else if (im.SeMovioVerticalmente(maquina.PlayerNumber) < estadisticasMovimiento.lagHaciaAbajo)
         {
             return SecuenciasPermitidas.ABAJO;
         }
@@ -181,19 +183,19 @@ public class MovimientoGenerico : MonoBehaviour
             string loQueVamosLogear = string.Empty;
             if (botonPrecionado != KeyCode.None)
             {
-                if (maquina.PatadaDebil == botonPrecionado)
+                if (im.BotonPrecionado(maquina.PatadaDebil) == botonPrecionado)
                 {
                     loQueVamosLogear = SecuenciasPermitidas.PATADADEBIL;
                 }
-                else if (maquina.PatadaFuerte == botonPrecionado)
+                else if (im.BotonPrecionado(maquina.PatadaFuerte) == botonPrecionado)
                 {
                     loQueVamosLogear = SecuenciasPermitidas.PATADAFUERTE;
                 }
-                else if (maquina.PunioDebil == botonPrecionado)
+                else if (im.BotonPrecionado(maquina.PunioDebil) == botonPrecionado)
                 {
                     loQueVamosLogear = SecuenciasPermitidas.PUNIODEBIL;
                 }
-                else if (maquina.PunioFuerte == botonPrecionado)
+                else if (im.BotonPrecionado(maquina.PunioFuerte) == botonPrecionado)
                 {
                     loQueVamosLogear = SecuenciasPermitidas.PUNIOFUERTE;
                 }
@@ -292,7 +294,7 @@ public class MovimientoGenerico : MonoBehaviour
         }
         else
         {
-            return Input.GetAxis(maquina.Horizontal);
+            return im.SeMovioHorizontalmente(maquina.PlayerNumber);
         }
     }
 
