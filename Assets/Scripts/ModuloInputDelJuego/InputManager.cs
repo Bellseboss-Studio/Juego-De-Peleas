@@ -1,5 +1,7 @@
 ﻿using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class InputManager : MonoBehaviour
 {
@@ -10,10 +12,24 @@ public class InputManager : MonoBehaviour
     private void Awake()
     {
         diccionarioDeControles = new Dictionary<InputDefinidosParaElJuego, InputGame>();
-        foreach(InputGame ig in listaDeIputs)
+        foreach (InputGame ig in listaDeIputs)
         {
             diccionarioDeControles.Add(ig.Id, ig);
         }
+    }
+
+    public void CambiarJoistickTeclado(TextMeshProUGUI texto)
+    {
+        isJoitick = !isJoitick;
+        if (isJoitick)
+        {
+            texto.text = "Se Juega con Control";
+        }
+        else
+        {
+            texto.text = "Se Juega con Teclado";
+        }
+        texto.text += " preciona para cambiar";
     }
 
     public bool SeprecionoElBoton(InputDefinidosParaElJuego input)

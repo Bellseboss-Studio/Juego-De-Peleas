@@ -15,11 +15,15 @@ public class DatosPersistentesDelPlayer : MonoBehaviour
     private TextMeshProUGUI letrero;
     [SerializeField]
     private int cantidadDeGolpes;
+    InputManager im;
 
     public TextMeshProUGUI Letrero { get => letrero; set => letrero = value; }
 
     public int CantidadDeGolpes { get => cantidadDeGolpes; set => cantidadDeGolpes = value; }
-
+    private void Start()
+    {
+        im = GameObject.Find("ControladorDeEscenario").GetComponent<InputManager>();
+    }
     public void AumentarCantidadDeGolpes()
     {
         cantidadDeGolpes++;
@@ -37,7 +41,7 @@ public class DatosPersistentesDelPlayer : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Joystick1Button7))
+        if (im.SeprecionoElBoton(InputDefinidosParaElJuego.Start))
         {
             SceneManager.LoadScene("Peleas");
         }
