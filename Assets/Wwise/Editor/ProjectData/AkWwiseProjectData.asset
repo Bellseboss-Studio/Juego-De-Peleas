@@ -9,17 +9,173 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e408e1891ba5c4e039aef1b104e7594c, type: 3}
+  m_Script: {fileID: 11500000, guid: 920a252eaebc74695aca7a4abdb7e6d1, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: ba0d184957395e47bd02fc68743e8092
+    GuidInternal: 
+    m_lastTime: -8586023339474775808
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 62e2fd9c781ab84bb78eb626ae3844ff
+    GuidInternal: 
+    m_lastTime: -8586020892764775808
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit/Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 3a5e836d7c85fc448dd13d13cebdffb6
+    GuidInternal: 
+    m_lastTime: -8586020905124775808
+    List:
+    - name: Main
+      guid: bdce4f7a89031444b84785aaf9865ef5
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit/Main
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 211c05457f9eb2458bb8a0c1aee13c45
+    GuidInternal: 
+    m_lastTime: -8586020892764775808
+    List:
+    - name: PlayMusic
+      guid: 1a66b6b66e7dce40b11f2838b20deb48
+      id: 417627684
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PlayMusic
+        ObjectType: 3
+      Path: Default Work Unit/PlayMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: PunchHit
+      guid: 51cedf671eadad4d82a9f217463276a4
+      id: 3343194546
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: PunchHit
+        ObjectType: 3
+      Path: Default Work Unit/PunchHit
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Woosh
+      guid: 53c3aa3f56921b4da1cd39156b8f89ac
+      id: 3099361103
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Woosh
+        ObjectType: 3
+      Path: Default Work Unit/Woosh
+      maxAttenuation: 0
+      maxDuration: 1.782008
+      minDuration: 1.063823
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 74094b24adda614a8ad920dad6b5b4d3
+    GuidInternal: 
+    m_lastTime: -8586023339474775808
+    List: []
+  - PhysicalPath: Game Parameters/Factory Motion.wwu
+    PathAndIcons:
+    - ElementName: Factory Motion
+      ObjectType: 12
+    ParentPath: Factory Motion
+    guid: 225213d7dbd1d042adc0930743567776
+    GuidInternal: 
+    m_lastTime: -8586063068374775808
+    List:
+    - name: Playback_Rate
+      guid: e37e38283ac11643b9c3db5c521624af
+      id: 1524500807
+      PathAndIcons:
+      - ElementName: Factory Motion
+        ObjectType: 12
+      - ElementName: Playback_Rate
+        ObjectType: 13
+      Path: Factory Motion/Playback_Rate
+    - name: RPM
+      guid: 05aa129177f5fd449f4e4424158129e6
+      id: 796049864
+      PathAndIcons:
+      - ElementName: Factory Motion
+        ObjectType: 12
+      - ElementName: RPM
+        ObjectType: 13
+      Path: Factory Motion/RPM
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 3c70cb25b99db147b108fcdc3d0edf2d
+    GuidInternal: 
+    m_lastTime: -8586023339474775808
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 2dfb5c450ae5f546b0f778c3b1e80c8a
+    GuidInternal: 
+    m_lastTime: -8586023339474775808
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 12364baf158a8146a4900d4fea06b6d2
+    GuidInternal: 
+    m_lastTime: -8586023339474775808
+    List: []
+  ExpandedItems:
+  - /Fight Game
+  - /Fight Game/Events
+  - /Fight Game/Events/Default Work Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

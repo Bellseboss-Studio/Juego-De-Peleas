@@ -1,0 +1,32 @@
+Event	ID	Name			Wwise Object Path	Notes
+	417627684	PlayMusic			\Default Work Unit\PlayMusic	
+	3099361103	Woosh			\Default Work Unit\Woosh	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	1446662	Punch1_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Punch3_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Punch1_bpm122_4-4		3470232
+	41394345	Whoosh_08	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_08_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_08		148330
+	172225201	Bajo1_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Bajo1_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Bajo1_bpm122_4-4		5899344
+	244077157	Platillo-R_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Platillo-R_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Platillo-R_bpm122_4-4		1735148
+	255566645	Whoosh_03	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_03_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_03		146624
+	269751541	Coro F_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Coro F_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Coro F_bpm122_4-4		6246360
+	270151019	Coro M_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Coro M_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Coro M_bpm122_4-4		6246360
+	291554182	Bajo1_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Bajo2_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Bajo1_bpm122_4-4		5899344
+	302214336	Whoosh_07	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_07_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_07		99530
+	421549504	Bateria1_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Bateria1_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Bateria1_bpm122_4-4		3470232
+	498368685	Bateria3_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Bateria3_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Bateria3_bpm122_4-4		3470232
+	518514861	Whoosh_05	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_05_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_05		142784
+	566888756	Bajo1_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Bajo3_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Bajo1_bpm122_4-4		5899344
+	607188623	Whoosh_04	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_04_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_04		136624
+	619943067	Whoosh_06	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_06_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_06		145514
+	637457389	Whoosh_09	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_09_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_09		113798
+	689451830	Platillo-G_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Platillo-G_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Platillo-G_bpm122_4-4		1388132
+	741734412	Bateria2_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Bateria2_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Bateria2_bpm122_4-4		3470228
+	777791243	Punch1_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Punch4_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Punch1_bpm122_4-4		2776200
+	810766326	Whoosh_02	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_02_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_02		131832
+	813367861	Bronces_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Bronces_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Bronces_bpm122_4-4		6246360
+	828427599	Bombo_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Bombo_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Bombo_bpm122_4-4		4164264
+	861629384	Punch1_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Punch2_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Punch1_bpm122_4-4		3470228
+	917760462	Ppunch_extra	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Punch1_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Ppunch_extra		2776196
+	938692189	Whoosh_01	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Whoosh_01_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Players\Player_1\Wooshes\Whoosh_01		132078
+	995872463	Pads_bpm122_4-4	Y:\Documents\GitHub\Fight Game\.cache\iOS\SFX\Fabrica\Pads_bpm122_4-4_D79FB2B7.wem		\Interactive Music Hierarchy\Default Work Unit\Music\Factory\Fabrica\Pads_bpm122_4-4		6246360
+

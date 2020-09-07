@@ -22,6 +22,8 @@ public class MovimientoGenerico : MonoBehaviour
     EstadisticaMovimiento estadisticasMovimiento;
     InputManager im;
 
+    public AK.Wwise.Event Woosh;
+
     private void Start()
     {
         im = GameObject.Find("ControladorDeEscenario").GetComponent<InputManager>();
@@ -312,5 +314,10 @@ public class MovimientoGenerico : MonoBehaviour
     public void AplicarFuerzaPersonaje(float fuerzaEnX)
     {
         rb.AddForce(new Vector2(fuerzaEnX, 0));
+    }
+
+    public void PlayWooshSound()
+    {
+        Woosh.Post(gameObject);
     }
 }

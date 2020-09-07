@@ -7,8 +7,8 @@
   <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
   <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
-  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
+  <SoundbankPath>Audio</SoundbankPath>
   <WwiseInstallationPathMac>/Applications/Audiokinetic/Wwise 2019.2.5.7349/Wwise.app</WwiseInstallationPathMac>
   <WwiseInstallationPathWindows />
-  <WwiseProjectPath>../../ProyectoPrincipal_JuegoDePeleas/Fight Game/Fight Game.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../../Fight Game/Fight Game.wproj</WwiseProjectPath>
 </WwiseSettings>
