@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{9CFDE262-1A78-4BB8-B78E-B626AE3844FF}" SchemaVersion="97">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{9CFDE262-1A78-4BB8-B78E-B626AE3844FF}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="System" ID="{CCA0363B-D185-48D1-A6A7-96146B4CAE54}" WorkUnitID="{FD299629-FF59-4E81-ABD0-8909E28E4466}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+				<Bus Name="Motion Factory Bus" ID="{2AF9B9C6-6EF1-46E9-B5F2-E30C9E602C74}">
+					<ReferenceList>
+						<Reference Name="AudioDevice">
+							<ObjectRef Name="Default_Motion_Device" ID="{677DFA42-CC2C-490D-A166-EBEDA47ECE1D}" WorkUnitID="{FD299629-FF59-4E81-ABD0-8909E28E4466}"/>
+						</Reference>
+					</ReferenceList>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>
