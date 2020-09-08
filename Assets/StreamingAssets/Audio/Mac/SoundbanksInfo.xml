@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<SoundBanksInfo Platform="iOS" BasePlatform="iOS" SchemaVersion="12" SoundbankVersion="135">
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
 	<RootPaths>
 		<ProjectRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Fight Game/</ProjectRoot>
-		<SourceFilesRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Fight Game/.cache/iOS/</SourceFilesRoot>
+		<SourceFilesRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Fight Game/.cache/Mac/</SourceFilesRoot>
 		<SoundBanksRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/ProyectoPrincipal_JuegoDePeleas/Assets/StreamingAssets/Audio/Mac/</SoundBanksRoot>
 		<ExternalSourcesInputFile></ExternalSourcesInputFile>
-		<ExternalSourcesOutputRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Fight Game/GeneratedSoundBanks/iOS</ExternalSourcesOutputRoot>
+		<ExternalSourcesOutputRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Fight Game/GeneratedSoundBanks/Mac</ExternalSourcesOutputRoot>
 	</RootPaths>
 	<DialogueEvents/>
 	<StreamedFiles/>
@@ -90,6 +90,50 @@
 						<File Id="995872463" Language="SFX">
 							<ShortName>Fabrica\Pads_bpm122_4-4.wav</ShortName>
 							<Path>SFX/Fabrica/Pads_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3343194546" Name="PunchHit" ObjectPath="\Events\Default Work Unit\PunchHit" DurationType="OneShot" DurationMin="1.642405" DurationMax="1.852907">
+					<IncludedMemoryFiles>
+						<File Id="50676040" Language="SFX">
+							<ShortName>Player_Jump_03.wav</ShortName>
+							<Path>SFX/Player_Jump_03_10C4C929.wem</Path>
+						</File>
+						<File Id="77083061" Language="SFX">
+							<ShortName>Player_Jump_01.wav</ShortName>
+							<Path>SFX/Player_Jump_01_10C4C929.wem</Path>
+						</File>
+						<File Id="155500919" Language="SFX">
+							<ShortName>Punch_4.wav</ShortName>
+							<Path>SFX/Punch_4_10C4C929.wem</Path>
+						</File>
+						<File Id="189570556" Language="SFX">
+							<ShortName>Punch_1.wav</ShortName>
+							<Path>SFX/Punch_1_10C4C929.wem</Path>
+						</File>
+						<File Id="364026096" Language="SFX">
+							<ShortName>Player_Jump_04.wav</ShortName>
+							<Path>SFX/Player_Jump_04_10C4C929.wem</Path>
+						</File>
+						<File Id="403921313" Language="SFX">
+							<ShortName>Punch_6.wav</ShortName>
+							<Path>SFX/Punch_6_10C4C929.wem</Path>
+						</File>
+						<File Id="464850709" Language="SFX">
+							<ShortName>Player_Jump_02.wav</ShortName>
+							<Path>SFX/Player_Jump_02_10C4C929.wem</Path>
+						</File>
+						<File Id="608763778" Language="SFX">
+							<ShortName>Punch_5.wav</ShortName>
+							<Path>SFX/Punch_5_10C4C929.wem</Path>
+						</File>
+						<File Id="717198345" Language="SFX">
+							<ShortName>Punch_3.wav</ShortName>
+							<Path>SFX/Punch_3_10C4C929.wem</Path>
+						</File>
+						<File Id="903521653" Language="SFX">
+							<ShortName>Punch_2.wav</ShortName>
+							<Path>SFX/Punch_2_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 3a5e836d7c85fc448dd13d13cebdffb6
     GuidInternal: 
-    m_lastTime: -8586020905124775808
+    m_lastTime: -8586020811704775808
     List:
     - name: Main
       guid: bdce4f7a89031444b84785aaf9865ef5
@@ -92,8 +92,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit/PunchHit
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 1.852907
+      minDuration: 1.642405
     - name: Woosh
       guid: 53c3aa3f56921b4da1cd39156b8f89ac
       id: 3099361103

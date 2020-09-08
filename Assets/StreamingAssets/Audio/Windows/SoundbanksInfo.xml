@@ -93,6 +93,50 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="3343194546" Name="PunchHit" ObjectPath="\Events\Default Work Unit\PunchHit" DurationType="OneShot" DurationMin="1.642405" DurationMax="1.852907">
+					<IncludedMemoryFiles>
+						<File Id="50676040" Language="SFX">
+							<ShortName>Player_Jump_03.wav</ShortName>
+							<Path>SFX/Player_Jump_03_10C4C929.wem</Path>
+						</File>
+						<File Id="77083061" Language="SFX">
+							<ShortName>Player_Jump_01.wav</ShortName>
+							<Path>SFX/Player_Jump_01_10C4C929.wem</Path>
+						</File>
+						<File Id="155500919" Language="SFX">
+							<ShortName>Punch_4.wav</ShortName>
+							<Path>SFX/Punch_4_10C4C929.wem</Path>
+						</File>
+						<File Id="189570556" Language="SFX">
+							<ShortName>Punch_1.wav</ShortName>
+							<Path>SFX/Punch_1_10C4C929.wem</Path>
+						</File>
+						<File Id="364026096" Language="SFX">
+							<ShortName>Player_Jump_04.wav</ShortName>
+							<Path>SFX/Player_Jump_04_10C4C929.wem</Path>
+						</File>
+						<File Id="403921313" Language="SFX">
+							<ShortName>Punch_6.wav</ShortName>
+							<Path>SFX/Punch_6_10C4C929.wem</Path>
+						</File>
+						<File Id="464850709" Language="SFX">
+							<ShortName>Player_Jump_02.wav</ShortName>
+							<Path>SFX/Player_Jump_02_10C4C929.wem</Path>
+						</File>
+						<File Id="608763778" Language="SFX">
+							<ShortName>Punch_5.wav</ShortName>
+							<Path>SFX/Punch_5_10C4C929.wem</Path>
+						</File>
+						<File Id="717198345" Language="SFX">
+							<ShortName>Punch_3.wav</ShortName>
+							<Path>SFX/Punch_3_10C4C929.wem</Path>
+						</File>
+						<File Id="903521653" Language="SFX">
+							<ShortName>Punch_2.wav</ShortName>
+							<Path>SFX/Punch_2_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="3099361103" Name="Woosh" ObjectPath="\Events\Default Work Unit\Woosh" DurationType="OneShot" DurationMin="1.063823" DurationMax="1.782008">
 					<IncludedMemoryFiles>
 						<File Id="41394345" Language="SFX">

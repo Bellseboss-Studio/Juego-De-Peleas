@@ -22,8 +22,6 @@ public class MovimientoGenerico : MonoBehaviour
     EstadisticaMovimiento estadisticasMovimiento;
     InputManager im;
 
-    public AK.Wwise.Event Woosh;
-
     private void Start()
     {
         im = GameObject.Find("ControladorDeEscenario").GetComponent<InputManager>();
@@ -74,6 +72,7 @@ public class MovimientoGenerico : MonoBehaviour
                     GetComponent<BaseMaquinaEstadosFinita>().ComponenteAnimacion.SetBool("correr", false);
                     LogearComandosIngresados();
                 }
+                //Salto
                 if (im.SeMovioVerticalmente(maquina.PlayerNumber) > estadisticasMovimiento.lagHaciaArriba)
                 {
                     maquina.ComponenteAnimacion.SetTrigger("saltar");
@@ -316,8 +315,4 @@ public class MovimientoGenerico : MonoBehaviour
         rb.AddForce(new Vector2(fuerzaEnX, 0));
     }
 
-    public void PlayWooshSound()
-    {
-        Woosh.Post(gameObject);
-    }
 }
