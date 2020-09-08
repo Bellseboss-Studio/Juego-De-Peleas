@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Fight Game/</ProjectRoot>
+		<SourceFilesRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Fight Game/.cache/Windows/</SourceFilesRoot>
+		<SoundBanksRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/ProyectoPrincipal_JuegoDePeleas/Assets/StreamingAssets/Audio/Windows/</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>/Users/ivanbeltran/Library/Application Support/Wwise2019/Bottles/Wwise2019x64/dosdevices/y:/Documents/GitHub/Fight Game/GeneratedSoundBanks/Windows</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="417627684" Name="PlayMusic" ObjectPath="\Events\Default Work Unit\PlayMusic" DurationType="Infinite">
+					<IncludedMemoryFiles>
+						<File Id="1446662" Language="SFX">
+							<ShortName>Fabrica\Punch3_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Punch3_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="172225201" Language="SFX">
+							<ShortName>Fabrica\Bajo1_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Bajo1_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="244077157" Language="SFX">
+							<ShortName>Fabrica\Platillo-R_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Platillo-R_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="269751541" Language="SFX">
+							<ShortName>Fabrica\Coro F_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Coro F_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="270151019" Language="SFX">
+							<ShortName>Fabrica\Coro M_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Coro M_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="291554182" Language="SFX">
+							<ShortName>Fabrica\Bajo2_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Bajo2_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="421549504" Language="SFX">
+							<ShortName>Fabrica\Bateria1_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Bateria1_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="498368685" Language="SFX">
+							<ShortName>Fabrica\Bateria3_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Bateria3_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="566888756" Language="SFX">
+							<ShortName>Fabrica\Bajo3_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Bajo3_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="689451830" Language="SFX">
+							<ShortName>Fabrica\Platillo-G_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Platillo-G_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="741734412" Language="SFX">
+							<ShortName>Fabrica\Bateria2_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Bateria2_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="777791243" Language="SFX">
+							<ShortName>Fabrica\Punch4_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Punch4_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="813367861" Language="SFX">
+							<ShortName>Fabrica\Bronces_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Bronces_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="828427599" Language="SFX">
+							<ShortName>Fabrica\Bombo_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Bombo_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="861629384" Language="SFX">
+							<ShortName>Fabrica\Punch2_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Punch2_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="917760462" Language="SFX">
+							<ShortName>Fabrica\Punch1_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Punch1_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+						<File Id="995872463" Language="SFX">
+							<ShortName>Fabrica\Pads_bpm122_4-4.wav</ShortName>
+							<Path>SFX/Fabrica/Pads_bpm122_4-4_D79FB2B7.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3099361103" Name="Woosh" ObjectPath="\Events\Default Work Unit\Woosh" DurationType="OneShot" DurationMin="1.063823" DurationMax="1.782008">
+					<IncludedMemoryFiles>
+						<File Id="41394345" Language="SFX">
+							<ShortName>Whoosh_08.wav</ShortName>
+							<Path>SFX/Whoosh_08_10C4C929.wem</Path>
+						</File>
+						<File Id="255566645" Language="SFX">
+							<ShortName>Whoosh_03.wav</ShortName>
+							<Path>SFX/Whoosh_03_10C4C929.wem</Path>
+						</File>
+						<File Id="302214336" Language="SFX">
+							<ShortName>Whoosh_07.wav</ShortName>
+							<Path>SFX/Whoosh_07_10C4C929.wem</Path>
+						</File>
+						<File Id="518514861" Language="SFX">
+							<ShortName>Whoosh_05.wav</ShortName>
+							<Path>SFX/Whoosh_05_10C4C929.wem</Path>
+						</File>
+						<File Id="607188623" Language="SFX">
+							<ShortName>Whoosh_04.wav</ShortName>
+							<Path>SFX/Whoosh_04_10C4C929.wem</Path>
+						</File>
+						<File Id="619943067" Language="SFX">
+							<ShortName>Whoosh_06.wav</ShortName>
+							<Path>SFX/Whoosh_06_10C4C929.wem</Path>
+						</File>
+						<File Id="637457389" Language="SFX">
+							<ShortName>Whoosh_09.wav</ShortName>
+							<Path>SFX/Whoosh_09_10C4C929.wem</Path>
+						</File>
+						<File Id="810766326" Language="SFX">
+							<ShortName>Whoosh_02.wav</ShortName>
+							<Path>SFX/Whoosh_02_10C4C929.wem</Path>
+						</File>
+						<File Id="938692189" Language="SFX">
+							<ShortName>Whoosh_01.wav</ShortName>
+							<Path>SFX/Whoosh_01_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
