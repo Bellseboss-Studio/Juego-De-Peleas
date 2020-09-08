@@ -6,17 +6,11 @@ public class AkWwisePunchSound : MonoBehaviour
 {
     public AK.Wwise.Event punchSoundEvent;
 
-    void Update()
-    {
-        
-    }
-
-    private void OnTriggerEnter2D(Collider other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         punchSoundEvent.Post(gameObject);
     }
-
-    private void OnCollisionEnter2D(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         punchSoundEvent.Post(gameObject);
     }
