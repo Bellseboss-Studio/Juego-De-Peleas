@@ -47,4 +47,5 @@ MonoBehaviour:
   evento:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 865a3f020a2234e239f561f7db07e94e,
+      type: 2}
