@@ -1,5 +1,6 @@
 ﻿public enum EnumSonidosParaSonar
 {
     Punch,
-    Woosh
-}
+    Woosh,
+    Golpe
+} 

@@ -8,5 +8,5 @@ public class SonidoParaSonar : MonoBehaviour
     [SerializeField] private AK.Wwise.Event evento;
 
     public EnumSonidosParaSonar Id => id;
-    public AK.Wwise.Event Evento => evento;
+    public AK.Wwise.Event Evento => evento; 
 }

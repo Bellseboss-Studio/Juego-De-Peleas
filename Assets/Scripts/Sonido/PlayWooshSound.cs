@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class PlayWooshSound : MonoBehaviour
 {
-    public AK.Wwise.Event woosh;
-    
+    [SerializeField] private IManejadorDeSonidosDelJuego manejador;
 
     public void PlayWoosh()
     {
-        woosh.Post(gameObject);
+        manejador.TocarCancion(EnumSonidosParaSonar.Woosh);
     }
 
-   
 }
