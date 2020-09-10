@@ -10,7 +10,7 @@ public class PunchCollision : MonoBehaviour
     {
         if (collision.tag == "Player")
         {
-            punchHit.Post(gameObject);
+            //punchHit.Post(gameObject);
         }
     }
 }

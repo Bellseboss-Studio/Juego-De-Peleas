@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 554891712}
   - component: {fileID: 554891713}
   - component: {fileID: 554891714}
+  - component: {fileID: 1087424561}
   m_Layer: 0
   m_Name: GolpeDeMano
   m_TagString: golpe
@@ -71,6 +72,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 0.3941452}
   m_EdgeRadius: 0
+--- !u!114 &1087424561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 554891711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683ef27162bd347288c0f301297a9595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  punchHit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 865a3f020a2234e239f561f7db07e94e,
+      type: 2}
 --- !u!1 &1423987835
 GameObject:
   m_ObjectHideFlags: 0
@@ -82,6 +100,7 @@ GameObject:
   - component: {fileID: 1423987836}
   - component: {fileID: 1423987837}
   - component: {fileID: 1423987838}
+  - component: {fileID: 985240904}
   m_Layer: 0
   m_Name: Patada
   m_TagString: golpe
@@ -142,6 +161,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &985240904
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1423987835}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 683ef27162bd347288c0f301297a9595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  punchHit:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 865a3f020a2234e239f561f7db07e94e,
+      type: 2}
 --- !u!1 &7995269751812405550
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,8 +313,8 @@ MonoBehaviour:
   - {fileID: 7995269753539938995}
   - {fileID: 7995269753632221385}
   m_Bounds:
-    m_Center: {x: -0.000000029802322, y: 0, z: 0}
-    m_Extent: {x: 0.34000006, y: 0.9250001, z: 0}
+    m_Center: {x: -0.00000014901161, y: 0, z: 0}
+    m_Extent: {x: 0.34000018, y: 0.9250001, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!61 &7995269751846765790
@@ -355,6 +391,7 @@ GameObject:
   - component: {fileID: 7995269751990730260}
   - component: {fileID: 7995269751990730263}
   - component: {fileID: 1909577177}
+  - component: {fileID: 1985961786}
   m_Layer: 0
   m_Name: Cyborg
   m_TagString: Player
@@ -448,7 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ff9f884ea4757a48ab280a81281625a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerNumber: 1
+  playerNumber: 2
   FueGolpeado: 0
   letrero: {fileID: 0}
   cantidadDeGolpes: 0
@@ -520,7 +557,7 @@ MonoBehaviour:
   vida: 0
   speed: 0
   tiempoRecuperacion: 1
-  tiempoGolpeado: 0.1
+  tiempoGolpeado: 0.026
   fuerzaGolpeDebil: 800
   fuerzaGolpeFuerte: 1000
   fuerzaDragonPunch: 0
@@ -530,6 +567,20 @@ MonoBehaviour:
   fuerzaDeSaltoHaciaAtras: 3
   fuerzaHaciaArriba: 0
   tiempoDeDashHaciaAtras: 1
+--- !u!114 &1985961786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995269751990730269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ab0a056e0ca44aa3b590d8738687d3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  manejador: {fileID: 5187126874558266518, guid: b18da16d9c9c2c547bd6ec497c24040d,
+    type: 3}
 --- !u!1 &7995269752129567157
 GameObject:
   m_ObjectHideFlags: 0
@@ -695,8 +746,8 @@ MonoBehaviour:
   - {fileID: 7995269753568014962}
   - {fileID: 7995269753128622738}
   m_Bounds:
-    m_Center: {x: 0.0015432239, y: -0.0013564825, z: 0}
-    m_Extent: {x: 0.3034559, y: 0.9217837, z: 0}
+    m_Center: {x: 0.0015438199, y: -0.0013564825, z: 0}
+    m_Extent: {x: 0.30345625, y: 0.9217837, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!61 &7995269752259472770
@@ -1337,8 +1388,8 @@ MonoBehaviour:
   - {fileID: 7995269753184332389}
   - {fileID: 7995269751964912373}
   m_Bounds:
-    m_Center: {x: -0.0036099553, y: 0.00000011920929, z: 0}
-    m_Extent: {x: 0.5986401, y: 0.7150001, z: 0}
+    m_Center: {x: -0.0036097765, y: 0.00000011920929, z: 0}
+    m_Extent: {x: 0.59864, y: 0.7150001, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!61 &7995269753531833561
@@ -1653,8 +1704,8 @@ MonoBehaviour:
   - {fileID: 7995269751812405551}
   - {fileID: 7995269753470651699}
   m_Bounds:
-    m_Center: {x: -0.0015650094, y: 0.0022950172, z: 0}
-    m_Extent: {x: 0.258435, y: 0.8177051, z: 0}
+    m_Center: {x: -0.0015651286, y: 0.0022950172, z: 0}
+    m_Extent: {x: 0.2584349, y: 0.8177051, z: 0}
   m_UseBatching: 1
   m_AlwaysUpdate: 1
 --- !u!61 &7995269753931010762
