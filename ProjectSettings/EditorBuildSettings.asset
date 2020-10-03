@@ -6,6 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/TituloDelJuego.unity
+    guid: 6e03bef1c59012245b1a19560b174801
+  - enabled: 1
+    path: Assets/Scenes/SeleccionDeModo.unity
+    guid: 4a250a9158e56f742bbddd5e1c32edaa
+  - enabled: 1
+    path: Assets/Scenes/SeleccionDePersonaje.unity
+    guid: 1a784a6b3a30f4b4ebdc1b750dfb4be4
+  - enabled: 1
     path: Assets/Scenes/Peleas.unity
     guid: 00a64fc53fec62645b0e0723e8b418d2
   m_configObjects: {}
