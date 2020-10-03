@@ -51,6 +51,10 @@ public class DatosPersistentesDelPlayer : MonoBehaviour
     {
         
     }
-
+    public void TerminarElJuegoPorqueUnoDeLosDosJugadoresGano()
+    {
+        //TODO aqui tenemos que hacer los fades para terminar, por ahora solo lo mandamos al inicio
+        SceneManager.LoadScene((int)IndicesDeEscenas.INTRO);
+    }
 
 }

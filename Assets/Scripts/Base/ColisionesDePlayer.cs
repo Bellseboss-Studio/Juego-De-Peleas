@@ -27,6 +27,10 @@ public class ColisionesDePlayer : MonoBehaviour
                 //aplicamos la fuerza del oponente, y se la aplicamos en direccion hacia atras de este personaje
                 //fuerza a aplicar del oponente
                 GetComponent<MovimientoGenerico>().AplicarFuerzaPersonaje(FuerzaAplicarParaDesplazamientoDelObjeto(instanciaAComponenteDeDanioDelOtro));
+                if(GetComponent<InterfazDeMetodosGenericosParaAcciones>().Vida <= 0)
+                {
+                    GetComponent<BaseMaquinaEstadosFinita>().Player.TerminarElJuegoPorqueUnoDeLosDosJugadoresGano();
+                }
             }
         }
     }

@@ -20,7 +20,7 @@ public class ControladorDeIntro : MonoBehaviour
     {
         if (input.SeprecionoElBoton(InputDefinidosParaElJuego.Start) || input.SeprecionoElBoton(InputDefinidosParaElJuego.Start_p2))
         {
-            SceneManager.LoadScene((int)IndicesDeEscenas.PELEA);
+            SceneManager.LoadScene((int)IndicesDeEscenas.SELECCION_DE_MODO);
         }
     }
 }
