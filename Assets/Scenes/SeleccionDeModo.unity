@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 96223941}
   - component: {fileID: 96223942}
+  - component: {fileID: 96223943}
   m_Layer: 0
   m_Name: ControladorDeSeleccionDeOpciones
   m_TagString: Untagged
@@ -164,6 +165,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306121c1213633149a7644b8c09a5e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &96223943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96223940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7bdefbfbd682d45b188921b21ae4ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personajesElegibles:
+  - {fileID: 1909577177, guid: a2ba1d76ac4166e4bad33ae46ae5a2df, type: 3}
 --- !u!1 &134437824
 GameObject:
   m_ObjectHideFlags: 0

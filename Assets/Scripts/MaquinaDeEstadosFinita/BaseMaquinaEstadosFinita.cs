@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
+public abstract class BaseMaquinaEstadosFinita : EstadoDeMaquina
 {
     protected Animator componenteDeAnimacion;
     protected InterfazDeMetodosGenericosParaAcciones accionesDelPersonaje;
@@ -19,9 +17,10 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
 
     protected InputManager inputManager;
     protected bool terminoLaAnimacion = false;
-    public abstract void Salir();
-    public virtual void Start()
+
+    public override void Start()
     {
+        base.Start();
         inputManager = GameObject.Find("ControladorDeEscenario").GetComponent<InputManager>();
         componenteDeAnimacion = GetComponent<Animator>();
         accionesDelPersonaje = GetComponent<InterfazDeMetodosGenericosParaAcciones>();
@@ -47,28 +46,6 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
         }
     }
 
-    public abstract void Update();
-
-    public abstract Type VerficarTransiciones();
-
-    public void VerificarCambios()
-    {
-        Type estadoACambiar = VerficarTransiciones();
-        if (estadoACambiar != this.GetType())
-        {
-            CambiarEstado(estadoACambiar);
-        }
-    }
-
-    public void CambiarEstado(Type nuevoEstado)
-    {
-        //agregamos el componente
-        gameObject.AddComponent(nuevoEstado);
-        //salir del estado actual
-        Salir();
-        //destuimos el estado viejo
-        Destroy(this);
-    }
 
     //Buscamos al oponente y lo retornamos
     //Necesitamos saber que player somos nosotros
@@ -79,9 +56,9 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
     {
         //con este componente
         GameObject[] listaDePlayers = GameObject.FindGameObjectsWithTag("Player");
-        foreach(GameObject player in listaDePlayers)
+        foreach (GameObject player in listaDePlayers)
         {
-            if(player.GetComponent<BaseMaquinaEstadosFinita>().playerNumber != playerNumber)
+            if (player.GetComponent<BaseMaquinaEstadosFinita>().playerNumber != playerNumber)
             {
                 return player;
             }
@@ -113,7 +90,7 @@ public abstract class BaseMaquinaEstadosFinita : MonoBehaviour
     public int CardinalidadDeHaciaAtras()
     {
         Vector2 diff = (gameObject.transform.position - oponente.transform.position);
-        if(diff.x < 0)
+        if (diff.x < 0)
         {
             return -1;
         }
