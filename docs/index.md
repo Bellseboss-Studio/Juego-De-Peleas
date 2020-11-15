@@ -1,6 +1,6 @@
 # Header 1
 
-[Branching](./SN.png)
+![Logo](./SN.png)
 
 #### Créditos
 
