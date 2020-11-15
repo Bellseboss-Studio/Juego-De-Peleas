@@ -1,4 +1,18 @@
 # Header 1
+Este es un juego de peleas ambientado en un futuro postapocaliptico. (Parrafo explicando mundo)
+
+En ellos pelearan los personajes (Explicación de quienes pelean)
+
+## Peleador 1
+Breve historia
+![Foto](./SN.png)
+
+## Peleador 2
+Breve historia
+![Foto](./SN.png)
+
+
+[Youtube](https://www.youtube.com/channel/UClApRZQ7zK2gHTuGRBDF2bA)
 
 ![Logo](./SN.png)
 
