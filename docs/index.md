@@ -3,7 +3,7 @@
 [Branching](./SN.png)
 
 #### Créditos
-Gracias a
+
 *   Ivan (SFX)	[Link1](https://peryloth.itch.io/starke-nation) [Link2](https://peryloth.itch.io/starke-nation)
 *   Camilo (Compositor)	[Link1](https://peryloth.itch.io/starke-nation) [Link2](https://peryloth.itch.io/starke-nation)
 *   Erick (Game Desing)	[Link1](https://peryloth.itch.io/starke-nation) [Link2](https://peryloth.itch.io/starke-nation)
