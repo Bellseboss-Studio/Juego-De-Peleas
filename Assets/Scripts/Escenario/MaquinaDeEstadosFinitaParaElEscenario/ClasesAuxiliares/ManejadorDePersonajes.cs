@@ -2,21 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ManejadorDePersonajes : IManejadorDePersonaje, IGuardarPlayerElegibles, IObtenerReferenciaDeLosPlayer,IGuardarReferenciaDeLosPlayer
+public class ManejadorDePersonajes : IManejadorDePersonaje, IObtenerReferenciaDeLosPlayer,IGuardarReferenciaDeLosPlayer
 {
-    private Dictionary<string, EstadisticasBase> personajesElegibles;
+    private Dictionary<string, BasePlayer> personajesElegibles;
     private GameObject player1, player2;
 
-    public void Installer(List<EstadisticasBase> personajesElegibles)
+    public void Installer(List<BasePlayer> personajesElegibles)
     {
-        this.personajesElegibles = new Dictionary<string, EstadisticasBase>();
-        foreach(EstadisticasBase personaje in personajesElegibles)
+        this.personajesElegibles = new Dictionary<string, BasePlayer>();
+        foreach(BasePlayer personaje in personajesElegibles)
         {
             this.personajesElegibles.Add(personaje.GetType().Name, personaje);
         }
     }
 
-    public EstadisticasBase PrimerPlayer()
+    public BasePlayer PrimerPlayer()
     {
         //buscamos al primer player
         string personaje = ServiceLocator.Instancie.GetService<IObtenerData>().GetStringData("Player1");
@@ -29,7 +29,7 @@ public class ManejadorDePersonajes : IManejadorDePersonaje, IGuardarPlayerElegib
         
     }
 
-    public EstadisticasBase SegundoPlayer()
+    public BasePlayer SegundoPlayer()
     {
         //buscamos al primer player
         string personaje = ServiceLocator.Instancie.GetService<IObtenerData>().GetStringData("Player2");

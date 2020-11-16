@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Installer : MonoBehaviour
 {
-    [SerializeField] private List<EstadisticasBase> personajesElegibles;
+    [SerializeField] private List<BasePlayer> personajesElegibles;
     private void Awake()
     {
         var obtenerData = new GuardadoDeDatosPorPlayerPref();

@@ -10,7 +10,7 @@ public class EstadoDePresentacionDelPlayerUno : MaquinaDeEstadoFinitaParaElEscen
         try
         {
             var prefabDelPrimerPlayer = ServiceLocator.Instancie.GetService<IManejadorDePersonaje>().PrimerPlayer();
-            instanciaDePlayer1 = Instantiate(prefabDelPrimerPlayer);
+            instanciaDePlayer1 = Instantiate(prefabDelPrimerPlayer).transform.Find("General").GetComponent<EstadisticasBase>();
             instanciaDePlayer1.transform.position = GameObject.Find("PosicionPlayer1").transform.position;
             instanciaDePlayer1.GetComponent<DatosPersistentesDelPlayer>().playerNumber = 1;
             NombreDelPlayableDirector = "guiaDeCamaraParaPlayer1";

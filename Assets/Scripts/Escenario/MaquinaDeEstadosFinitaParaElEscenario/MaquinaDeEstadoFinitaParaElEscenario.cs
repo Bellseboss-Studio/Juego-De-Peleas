@@ -15,6 +15,7 @@ public abstract class MaquinaDeEstadoFinitaParaElEscenario : EstadoDeMaquina
     {
         base.Start();
         camara = GameObject.Find("CM vcam2").GetComponent<CinemachineVirtualCamera>();
+        //Buscar el director en el player
         director = GameObject.Find(NombreDelPlayableDirector).GetComponent<PlayableDirector>();
         new CameraController().ComenzarSeguirObjetoEnEscena(camara, NombreDelPlayableDirector);
         new DirectorDeTimeLineController().EjecutandoLaAnimacionDelTimeLineRespectiva(director);

@@ -1,9 +1,10 @@
 ﻿
 using System.Collections.Generic;
+using UnityEngine;
 
 public interface IManejadorDePersonaje
 {
-    void Installer(List<EstadisticasBase> personajesElegibles);
-    EstadisticasBase PrimerPlayer();
-    EstadisticasBase SegundoPlayer();
+    void Installer(List<BasePlayer> personajesElegibles);
+    BasePlayer PrimerPlayer();
+    BasePlayer SegundoPlayer();
 }

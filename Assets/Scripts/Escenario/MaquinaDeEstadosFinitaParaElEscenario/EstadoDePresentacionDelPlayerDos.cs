@@ -31,7 +31,7 @@ public class EstadoDePresentacionDelPlayerDos : MaquinaDeEstadoFinitaParaElEscen
         try
         {
             var prefabDelPrimerPlayer = ServiceLocator.Instancie.GetService<IManejadorDePersonaje>().SegundoPlayer();
-            instanciaDePlayer2 = Instantiate(prefabDelPrimerPlayer);
+            instanciaDePlayer2 = Instantiate(prefabDelPrimerPlayer).transform.Find("General").GetComponent<EstadisticasBase>();
 
             instanciaDePlayer2.transform.position = GameObject.Find("PosicionPlayer2").transform.position;
             //instanciaDePlayer2.transform.rotation = new Quaternion(0, 180, 0, 0);
