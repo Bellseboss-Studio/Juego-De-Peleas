@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceLocator;
+using System;
 using UnityEngine;
 
 public class EstadoDePreparacionDePeleaReady : MaquinaDeEstadoFinitaParaElEscenario
@@ -10,8 +11,8 @@ public class EstadoDePreparacionDePeleaReady : MaquinaDeEstadoFinitaParaElEscena
         base.Start();
 
         //obtener a los dos jugadores e inicializarlos
-        ServiceLocator.Instancie.GetService<IObtenerReferenciaDeLosPlayer>().Player1().GetComponent<ControladorDeLaOrientacionDelPJ>().Init();
-        ServiceLocator.Instancie.GetService<IObtenerReferenciaDeLosPlayer>().Player2().GetComponent<ControladorDeLaOrientacionDelPJ>().Init();
+        ServiceLocatorImplement.Instancie.GetService<IObtenerReferenciaDeLosPlayer>().Player1().GetComponent<ControladorDeLaOrientacionDelPJ>().Init();
+        ServiceLocatorImplement.Instancie.GetService<IObtenerReferenciaDeLosPlayer>().Player2().GetComponent<ControladorDeLaOrientacionDelPJ>().Init();
 
 
     }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ServiceLocator;
+using System;
 using UnityEngine;
 
 public class EstadoDePresentacionDelPlayerUno : MaquinaDeEstadoFinitaParaElEscenario
@@ -9,12 +10,12 @@ public class EstadoDePresentacionDelPlayerUno : MaquinaDeEstadoFinitaParaElEscen
         EstadisticasBase instanciaDePlayer1;
         try
         {
-            var prefabDelPrimerPlayer = ServiceLocator.Instancie.GetService<IManejadorDePersonaje>().PrimerPlayer();
-            instanciaDePlayer1 = Instantiate(prefabDelPrimerPlayer).transform.Find("General").GetComponent<EstadisticasBase>();
-            instanciaDePlayer1.transform.position = GameObject.Find("PosicionPlayer1").transform.position;
-            instanciaDePlayer1.GetComponent<DatosPersistentesDelPlayer>().playerNumber = 1;
+            var prefabDelPrimerPlayer = ServiceLocatorImplement.Instancie.GetService<IManejadorDePersonaje>().PrimerPlayer();
+            //instanciaDePlayer1 = Instantiate(prefabDelPrimerPlayer).transform.Find("General").GetComponent<EstadisticasBase>();
+            //instanciaDePlayer1.transform.position = GameObject.Find("PosicionPlayer1").transform.position;
+            //instanciaDePlayer1.GetComponent<DatosPersistentesDelPlayer>().playerNumber = 1;
             NombreDelPlayableDirector = "guiaDeCamaraParaPlayer1";
-            ServiceLocator.Instancie.GetService<IGuardarReferenciaDeLosPlayer>().Player1(instanciaDePlayer1.gameObject);
+            //ServiceLocator.Instancie.GetService<IGuardarReferenciaDeLosPlayer>().Player1(instanciaDePlayer1.gameObject);
             
         }
         catch (PersonajeElegidoNoExisteException e)
@@ -23,7 +24,7 @@ public class EstadoDePresentacionDelPlayerUno : MaquinaDeEstadoFinitaParaElEscen
             instanciaDePlayer1 = new EstadisticasBase();
         }
         base.Start();
-        director.transform.SetParent(instanciaDePlayer1.gameObject.transform);
+        //director.transform.SetParent(instanciaDePlayer1.gameObject.transform);
     }
 
     public override void Salir()

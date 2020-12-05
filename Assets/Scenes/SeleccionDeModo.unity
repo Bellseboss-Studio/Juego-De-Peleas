@@ -178,7 +178,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   personajesElegibles:
-  - {fileID: 1909577177, guid: a2ba1d76ac4166e4bad33ae46ae5a2df, type: 3}
+  - {fileID: 9016227123585265644, guid: a2ba1d76ac4166e4bad33ae46ae5a2df, type: 3}
 --- !u!1 &134437824
 GameObject:
   m_ObjectHideFlags: 0

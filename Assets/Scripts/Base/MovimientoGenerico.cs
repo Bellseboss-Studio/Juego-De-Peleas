@@ -34,7 +34,7 @@ public class MovimientoGenerico : MonoBehaviour
         palancas = new Queue<string>();
         velocidadDash = 1;
         //Vamos a buscar configuracion del delay
-        string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticaMovimiento.txt");
+        string stringDeEstadisticasGenrales = default;// ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticaMovimiento.txt");
         Debug.Log(stringDeEstadisticasGenrales);
         estadisticasMovimiento = JsonUtility.FromJson<EstadisticaMovimiento>(stringDeEstadisticasGenrales);
     }

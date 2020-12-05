@@ -1,0 +1,15 @@
+{
+    "name": "ServiceLocator",
+    "references": [
+        "GUID:ccaa448b70930c04bbbf6223b66d0a99"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
