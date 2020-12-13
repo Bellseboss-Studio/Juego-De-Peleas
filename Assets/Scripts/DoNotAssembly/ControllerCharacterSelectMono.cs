@@ -110,5 +110,6 @@ public class ControllerCharacterSelectMono : MonoBehaviour
         y = y < 0 ? 0 : y;
         //referencia a donde debe de estar la imagen
         selectorPlayer1.gameObject.transform.parent = listaDePersonajes[x, y].transform;
+        //selectorPlayer1.rectTransform.
     }
 }
