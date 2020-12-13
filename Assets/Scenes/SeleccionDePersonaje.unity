@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 107602075}
   m_Layer: 5
   m_Name: Image
-  m_TagString: Untagged
+  m_TagString: characterSelector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -858,7 +858,7 @@ GameObject:
   - component: {fileID: 1240738954}
   m_Layer: 5
   m_Name: Image
-  m_TagString: characterSelector
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
