@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace ServiceLocator
 {
-    public class ManejadorDePersonajes : IManejadorDePersonaje, IObtenerReferenciaDeLosPlayer,IGuardarReferenciaDeLosPlayer
+    public class ManejadorDePersonajes : IManejadorDePersonaje, IObtenerReferenciaDeLosPlayer, IGuardarReferenciaDeLosPlayer
     {
         private Dictionary<string, CharacterBase> personajesElegibles;
         private GameObject player1, player2;
@@ -14,7 +14,7 @@ namespace ServiceLocator
             this.personajesElegibles = new Dictionary<string, CharacterBase>();
             foreach(CharacterBase personaje in personajesElegibles)
             {
-                this.personajesElegibles.Add(personaje.GetType().Name, personaje);
+                this.personajesElegibles.Add(personaje.StatsBase.Name, personaje);
             }
         }
 
@@ -55,22 +55,22 @@ namespace ServiceLocator
 
         public void Player1(GameObject player)
         {
-            this.player1 = player;
+            player1 = player;
         }
 
         public void Player2(GameObject player)
         {
-            this.player2 = player;
+            player2 = player;
         }
 
         public GameObject Player1()
         {
-            return this.player1;
+            return player1;
         }
 
         public GameObject Player2()
         {
-            return this.player2;
+            return player2;
         }
     }
 }

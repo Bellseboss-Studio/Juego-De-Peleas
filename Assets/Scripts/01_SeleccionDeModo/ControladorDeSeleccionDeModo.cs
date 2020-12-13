@@ -8,10 +8,7 @@ public class ControladorDeSeleccionDeModo : MonoBehaviour
 {
     public void DosJugadores()
     {
-        Debug.Log("paso por aqui par ala pelea");
-        ServiceLocatorImplement.Instancie.GetService<IGuardarData>().SetStringData("Player1","Cyborg");
-        ServiceLocatorImplement.Instancie.GetService<IGuardarData>().SetStringData("Player2", "Cyborg");
-        SceneManager.LoadScene((int)IndicesDeEscenas.PELEA);
+        SceneManager.LoadScene((int)IndicesDeEscenas.SELECCION_DE_PERSONAJE);
 
     }
 

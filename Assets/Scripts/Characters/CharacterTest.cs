@@ -2,12 +2,8 @@
 {
     public class CharacterTest : CharacterBase
     {
-
-        public CharacterTest(StatsBase statsBase)
+        public CharacterTest(StatsBase baseStat) : base(baseStat)
         {
-            StatsBase = statsBase;
         }
-        
-        public StatsBase StatsBase { get; }
     }
 }

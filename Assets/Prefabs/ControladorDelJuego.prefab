@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &5254754021784824881
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5254754021784824882}
+  - component: {fileID: 5254754021784824883}
+  - component: {fileID: 5254754021784824880}
+  - component: {fileID: 5254754023137365443}
+  m_Layer: 0
+  m_Name: ControladorDelJuego
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5254754021784824882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254754021784824881}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5254754021784824883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254754021784824881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a54c689d771ec094bab959831ccdd5df, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5254754021784824880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254754021784824881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca7bdefbfbd682d45b188921b21ae4ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  personajesElegiblesGO:
+  - {fileID: 3880229820058476435, guid: 27732945f91e4ad45a0ee4bc9f9c5240, type: 3}
+  - {fileID: 8263953555423181350, guid: ea1483a46bdc6ef4386c5e24b92e6d1e, type: 3}
+--- !u!114 &5254754023137365443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5254754021784824881}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b34f378f49cd1a42857db6456f9f3dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  listaDeIputs:
+  - {fileID: 6309007813462581437, guid: fd7fb676f1fa08641b60fc55fdc292a2, type: 3}
+  - {fileID: 4204734324404467166, guid: d386c4fee96950f4b985195537711e75, type: 3}
+  - {fileID: 5639699030289340527, guid: 8676420ba4ab22644a289f40340887d5, type: 3}
+  - {fileID: 5785866505374275238, guid: b0f2a8e8113a291478c7f3c93e3152fd, type: 3}
+  - {fileID: 6367138162704647627, guid: 49624836f5bb7c6458319b4ad80a3bd5, type: 3}
+  - {fileID: 3637985196859593258, guid: 7bc7d37c3c4243b44be225e78963256b, type: 3}
+  - {fileID: 721488487271327813, guid: 414248c0b8cd9e64cbe0e885ea88b0f7, type: 3}
+  - {fileID: 5883936039459801367, guid: afe3c92abd0d249419a7be7bf6b061ab, type: 3}
+  - {fileID: 2675653372917465399, guid: a49f14b66503e5d41a7591b88cb13f57, type: 3}
+  - {fileID: 4426391323667414329, guid: 576442ee86134cc4db958cad3b0eecc2, type: 3}
+  isJoitick: 0
