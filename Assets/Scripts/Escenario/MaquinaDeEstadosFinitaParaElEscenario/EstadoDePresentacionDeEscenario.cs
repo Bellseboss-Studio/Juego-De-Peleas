@@ -9,8 +9,8 @@ public class EstadoDePresentacionDeEscenario : MaquinaDeEstadoFinitaParaElEscena
     {
         NombreDelPlayableDirector = "guiaDeCamara1";
         base.Start();
-        ServiceLocatorImplement.Instancie.GetService<IGuardarData>().SetStringData("Player1", "BasePlayer");
-        ServiceLocatorImplement.Instancie.GetService<IGuardarData>().SetStringData("Player2", "BasePlayer");
+        //ServiceLocatorImplement.Instancie.GetService<IGuardarData>().SetStringData("Player1", "BasePlayer");
+        //ServiceLocatorImplement.Instancie.GetService<IGuardarData>().SetStringData("Player2", "BasePlayer");
     }
 
     public override void Update()
