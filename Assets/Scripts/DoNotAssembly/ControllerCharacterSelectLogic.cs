@@ -74,6 +74,10 @@ public class ControllerCharacterSelectLogic
         if (input.SeUndioElBoton(botonPrecionado))
         {
             player.SeSelecciono = !player.SeSelecciono;
+            if (player.SeSelecciono)
+            {
+                player.personajeElegido = BuscarPersonaje(player);
+            }
             if (!faltaUnStartMasParaJugar)
             {
                 controllerCharacterSelectMono.CargarLaEscenaDePelea();
@@ -96,6 +100,12 @@ public class ControllerCharacterSelectLogic
 
     private void SeleccionarObjectoDelCampoParaMostrarleAlgo(IPlayerJuegoDePelea player)
     {
+        player.gameObject.gameObject.transform.parent = BuscarPersonaje(player).transform;
+        player.gameObject.gameObject.transform.localPosition = Vector2.zero;
+    }
+
+    private GameObject BuscarPersonaje(IPlayerJuegoDePelea player)
+    {
         int x, y;
         y = (int)(player.y < 1 ? 1 : player.y > alto ? alto : player.y);
         x = (int)(player.x < 1 ? 1 : player.x > ancho ? ancho : player.x);
@@ -103,8 +113,6 @@ public class ControllerCharacterSelectLogic
         y -= 1;
         x = x < 0 ? 0 : x;
         y = y < 0 ? 0 : y;
-
-        player.gameObject.gameObject.transform.parent = listaDePersonajes[x, y].transform;
-        player.gameObject.gameObject.transform.localPosition = Vector2.zero;
+        return listaDePersonajes[x, y];
     }
 }

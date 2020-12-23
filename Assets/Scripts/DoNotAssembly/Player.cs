@@ -7,6 +7,7 @@ public class Player : IPlayerJuegoDePelea
     public float y { get; set; }
     public GameObject gameObject { get; set; }
     public bool SeSelecciono { get; set; }
+    public GameObject personajeElegido { get; set; }
 
     public string ToString()
     {
