@@ -46,6 +46,20 @@ public class InputManager : MonoBehaviour
         }
     }
 
+    public bool SeUndioElBoton(InputDefinidosParaElJuego input)
+    {
+        InputGame ig;
+        diccionarioDeControles.TryGetValue(input, out ig);
+        if (isJoitick)
+        {
+            return Input.GetKeyDown(ig.Joistick);
+        }
+        else
+        {
+            return Input.GetKeyDown(ig.Keyboard);
+        }
+    }
+
     public KeyCode BotonPrecionado(InputDefinidosParaElJuego input)
     {
         InputGame ig;

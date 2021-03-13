@@ -43,6 +43,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac85266d527e8140941ae1add693cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyboard: 43
+  keyboard: 109
   joistick: 382
   id: 10

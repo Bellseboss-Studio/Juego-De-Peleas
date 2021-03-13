@@ -9,7 +9,7 @@ public class Cyborg : EstadisticasBase
         base.Awake();
         //
         //delegamos la lectura del archivo a otro coso
-        string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticasPJ_" + typeof(Cyborg).Name+".txt");
+        string stringDeEstadisticasGenrales = default; //ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticasPJ_" + typeof(Cyborg).Name+".txt");
         Debug.Log(stringDeEstadisticasGenrales);
 
         EstadisticasBasePersonajeDebug estadisticasBase = JsonUtility.FromJson<EstadisticasBasePersonajeDebug>(stringDeEstadisticasGenrales);

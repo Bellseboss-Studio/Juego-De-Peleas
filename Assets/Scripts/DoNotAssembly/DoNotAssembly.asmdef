@@ -1,0 +1,17 @@
+{
+    "name": "DoNotAssembly",
+    "references": [
+        "GUID:4aefa43dd058d1d4cb0e3745c4eff978",
+        "GUID:ccaa448b70930c04bbbf6223b66d0a99",
+        "GUID:e579d7cce5fdf594785232bf585be6ba"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

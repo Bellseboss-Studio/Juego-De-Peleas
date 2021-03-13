@@ -103,7 +103,7 @@ public class EstadisticasBase : MonoBehaviour, InterfazDeMetodosGenericosParaAcc
     public virtual void Awake()
     {
         //delegamos la lectura del archivo a otro coso
-        string stringDeEstadisticasGenrales = ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticasGenerales.txt");
+        string stringDeEstadisticasGenrales = default; //ManejadorDeArchivos.LeerArchivo(@"debug_EstadisticasGenerales.txt");
         Debug.Log(stringDeEstadisticasGenrales);
 
         EstadisticasBasePersonajeDebug estadisticasBase = JsonUtility.FromJson<EstadisticasBasePersonajeDebug>(stringDeEstadisticasGenrales);

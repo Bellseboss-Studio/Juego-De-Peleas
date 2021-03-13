@@ -392,6 +392,7 @@ GameObject:
   - component: {fileID: 7995269751990730263}
   - component: {fileID: 1909577177}
   - component: {fileID: 1985961786}
+  - component: {fileID: 9016227123585265644}
   m_Layer: 0
   m_Name: Cyborg
   m_TagString: Player
@@ -581,6 +582,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   manejador: {fileID: 5187126874558266518, guid: b18da16d9c9c2c547bd6ec497c24040d,
     type: 3}
+--- !u!114 &9016227123585265644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7995269751990730269}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4af1b8b835e338b49ac79ef29cbe012d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7995269752129567157
 GameObject:
   m_ObjectHideFlags: 0
