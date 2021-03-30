@@ -1,5 +1,5 @@
-﻿using NSubstitute;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using NSubstitute;
 using ServiceLocator;
 using NUnit.Framework;
 using UnityEngine;
